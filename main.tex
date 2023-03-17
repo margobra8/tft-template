@@ -1,0 +1,41 @@
+\documentclass[11pt,parskip=half-,chapterprefix=true,appendixprefix=true,numbers=noenddot,bibliography=totoc]{scrreprt}
+
+\input{internal/preamble.tex} % modify here the details of the thesis such as titple, authors, supervisors, year of publication... and configuration of packages
+
+\input{internal/glossary.tex} % include here a list of abbreviations used in the document body.
+
+\begin{document}
+
+	\pagenumbering{alph}
+	\include{cover/cover.tex} % thesis cover and first pages
+
+	\pagenumbering{roman}
+
+	\include{chapters/toc.tex} % table of contents
+	\include{chapters/lof.tex} % list of figures
+	\include{chapters/lot.tex} % list of tables
+	\include{chapters/abbr.tex} % list of abbreviations
+
+	\include{chapters/ack.tex} % acknowledgements
+
+	\pagenumbering{arabic}
+
+	\setcounter{page}{1}
+
+	% include here the individual chapters of the document body in order of appearance. Use the example provided with the introduction chapter. All chapters must be placed inside the chapters/ directory
+	\include{chapters/intro.tex}
+
+	%% Uncomment the 3 lines below and comment the fourth line to use bibtex. Leave as is if using biber. Biber is recommended, but you must first compile your bibliography. The bibliography is located in ref/full.bib
+	%\bibliographystyle{IEEEtran}
+	%\bibliography{sources.bib}
+	%\bibliography{IEEEabrv,ref/full.bib}
+	\printbibliography
+
+	\appendix
+
+	% include here the individual appendices of the document in order of appearance. Use the example provided with the two mandatory appendices. All appendices must be placed inside the appendices/ directory
+	\include{appendices/econ_environ.tex}
+	\include{appendices/budget.tex}
+
+
+\end{document}

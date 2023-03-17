@@ -1,0 +1,64 @@
+\chapter{Economic budget}
+
+This appendix covers an approximate budget for the developed project. The labour involves a single person, an engineering student. The hourly salary of the engineering student is calculated based on the income from an internship salary, awarded for the development of the project. \cref{tab:labour_costs} lists the labour costs associated with the project.
+
+\begin{table}[h]
+	\centering
+	\begin{tblr}{
+			width = \linewidth,
+			colspec = {QQQ},
+			cells = {c},
+			hlines = {0.08em},
+			hline{2} = {-}{0.05em},
+		}
+		\textbf{Hours} & \textbf{Cost/hour (€)} & \textbf{Total (€)}\\
+		720 & 8.30 & 5,976.00
+	\end{tblr}
+	\caption{Labour costs.}
+	\label{tab:labour_costs}
+\end{table}
+
+The cost of the equipment and materials used in the project is detailed in \cref{tab:material_costs}.
+
+\begin{table}[h!]
+	\centering
+		\begin{tblr}{
+				vline{5} = {23}{},
+				hline{1,24} = {-}{0.08em},
+				hline{2,23} = {-}{},
+			}
+			\textbf{Item} & {\textbf{Cost}\\\textbf{(€)}} & {\textbf{Use}\\\textbf{(months)}} & {\textbf{Deprec.}\\\textbf{(years)}} & {\textbf{Total}\\\textbf{(€)}}\\
+			Personal Computer (SW included) & 950.00 & 12 & 5 & 190.00\\
+			MATLAB License & 800.00 & 12 & 1 & 800.00\\
+			\textbf{TOTAL (Direct Costs)} &  &  &  & \textbf{990.00}
+		\end{tblr}
+	\caption{Material costs.}
+	\label{tab:material_costs}
+\end{table}
+
+After taking into account indirect costs and VAT, the final cost of the project is summarised in \cref{tab:final_costs}.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{ll|l}
+		\toprule
+		\textbf{Concept} & \multicolumn{1}{l}{\textbf{Percentage}} & \textbf{Total (€)} \\
+		\hline
+		Material Resources (DC) &  & AAA \\
+		General Expenses (IC) & 15\% over DC & BBB \\
+		Labour costs & & CCC \\
+		\hline
+		& \multicolumn{1}{l}{} &  \\
+		\hline
+		Subtotal &  & \textbf{DDD} \\
+		VAT & 21\% & EEE \\
+		\hline
+		& \multicolumn{1}{l}{} &  \\
+		\bottomrule
+		\multicolumn{1}{!{\vrule width \heavyrulewidth}l}{\textbf{Budget Total}} & \multicolumn{1}{l!{\vrule width \heavyrulewidth}}{} & \multicolumn{1}{l!{\vrule width \heavyrulewidth}}{\textbf{FFF}} \\
+		\bottomrule
+	\end{tabular}
+	\caption{Summary of total costs.}
+	\label{tab:final_costs}
+\end{table}
+
